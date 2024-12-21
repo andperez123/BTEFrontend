@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { burnAndMint } from "../utils/contract";
+import './BurnToEarn.css';
 
 const BurnInterface = () => {
     const wallet = useWallet();

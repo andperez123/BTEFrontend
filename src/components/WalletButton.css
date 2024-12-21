@@ -1,0 +1,31 @@
+/* Override Solana wallet adapter button styles */
+.wallet-adapter-button {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;
+    border-radius: 4px !important;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    transition: all 0.2s ease !important;
+}
+
+.wallet-adapter-button:hover {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+.wallet-adapter-button:not([disabled]):hover {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+/* Override modal styles if needed */
+.wallet-adapter-modal-wrapper {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+.wallet-adapter-modal-button-close {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+}

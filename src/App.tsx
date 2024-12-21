@@ -7,6 +7,7 @@ import { useMemo } from "react";
 import WalletButton from "./components/WalletButton";
 
 import "@solana/wallet-adapter-react-ui/styles.css";
+import './App.css';
 
 const App = () => {
   console.log("App is rendering"); // Debug log
@@ -19,16 +20,13 @@ const App = () => {
     <ConnectionProvider endpoint={endpoint}>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
-          <div style={{ 
-            padding: "20px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            minHeight: "100vh",
-            backgroundColor: "#f0f0f0"
-          }}>
-            <h1 style={{ color: "#333" }}>Burn To Earn</h1>
-            <WalletButton />
+          <div className="main-container">
+            <div className="wallet-wrapper">
+              <WalletButton />
+            </div>
+            <div className="App">
+              <h1>Burn To Earn</h1>
+            </div>
           </div>
         </WalletModalProvider>
       </WalletProvider>
