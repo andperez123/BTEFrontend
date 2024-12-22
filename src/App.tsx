@@ -5,6 +5,7 @@ import { PhantomWalletAdapter } from "@solana/wallet-adapter-wallets";
 import { clusterApiUrl } from "@solana/web3.js";
 import { useMemo } from "react";
 import WalletButton from "./components/WalletButton";
+import BurnInterface from "./components/BurnInterface";
 
 import "@solana/wallet-adapter-react-ui/styles.css";
 import './App.css';
@@ -26,6 +27,7 @@ const App = () => {
             </div>
             <div className="App">
               <h1>Burn To Earn</h1>
+              <BurnInterface />
             </div>
           </div>
         </WalletModalProvider>
